@@ -1,0 +1,12 @@
+<h1><%= @debater.name %></h1>
+<i><%= @debater.email %></i>
+
+<h3>User Menu</h3>
+<ul>
+<li><%= link_to("Edit Yourself", :controller => :debater, :action => :edit_myself_form) %>
+(Last Update: <%= @debater.updated_at  %>)</li>
+<li><%= link_to("Card Manager", :controller => :card, :action => :display_all_cards) %></li>
+<li><%= link_to("Section Manager", :controller => :section, :action => :display_all_sections) %></li>
+</ul>
+
+

@@ -1,0 +1,26 @@
+<h1>File Manager</h1>
+Manage files
+<h3>Actions</h3>
+<%= link_to("Add File", :action => :add_file_form) %><br/>
+<h3>File List</h3>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Add Section</th>
+        <th>file Summary</th>
+        <th>Full file</th>
+    </tr>
+    <% @debate_files.each do |file| %>
+        <tr>
+            <td><%= file.title %></td>
+            <td><%= link_to("Edit", :action => :edit_file_form, :id => file.id) %></td>
+            <td><%= link_to("Delete", :action => :delete_file, :id => file.id) %></td>
+            <td><%= link_to("Add Section to file", :action => :add_section_to_file_form, :id => file.id) %></td>
+            <td><%= link_to("View file Summary", :action => :show_file_summary, :id => file.id) %></td>
+            <td><%= link_to("View Full file", :action => :show_file, :id => file.id) %></td>
+        </tr>
+    <% end %>
+</table>
+

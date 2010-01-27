@@ -1,0 +1,26 @@
+<h1>section Manager</h1>
+Manage sections
+<h3>Actions</h3>
+<%= link_to("Add Section", :action => :add_section_form) %><br/>
+<h3>section List</h3>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Add Card</th>
+        <th>Section Summary</th>
+        <th>Full Section</th>
+    </tr>
+    <% @sections.each do |section| %>
+        <tr>
+            <td><%= section.title %></td>
+            <td><%= link_to("Edit", :action => :edit_section_form, :id => section.id) %></td>
+            <td><%= link_to("Delete", :action => :delete_section, :id => section.id) %></td>
+            <td><%= link_to("Add Card to section", :action => :add_card_to_section_form, :id => section.id) %></td>
+            <td><%= link_to("View Section Summary", :action => :show_section_summary, :id => section.id) %></td>
+            <td><%= link_to("View Full Section", :action => :show_section, :id => section.id) %></td>
+        </tr>
+    <% end %>
+</table>
+

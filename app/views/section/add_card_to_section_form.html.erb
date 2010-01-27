@@ -1,0 +1,19 @@
+<% form_tag(:action => :add_card_to_section, :id => @section.id) do %>
+    <table>
+        <tr>
+            <td colspan=2><center>Add Card To Section</center></td>
+        </tr>
+        <tr>
+            <td>Card</td>
+            <td><%= select_tag(:card_id, options_for_select(@card_select)) %></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <%= submit_tag("Add Card To " + @section.title) %>
+                </center>
+            </td>
+        </tr>
+    </table>
+<% end %>
+

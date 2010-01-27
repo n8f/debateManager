@@ -1,0 +1,25 @@
+<% form_for :debater, :url => { :action => :edit_myself } do |form| %>
+    <table>
+        <tr>
+            <td>Email</td>
+            <td><%= form.text_field(:email) %></td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><%= form.text_field(:name) %></td>
+        </tr>
+
+        <tr>
+            <td>Pasword</td>
+            <td><%= form.text_field(:password) %></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <%= form.submit("Edit Yourself") %>
+                </center>
+            </td>
+        </tr>
+    </table>
+<% end %>

@@ -1,0 +1,16 @@
+<!-- partial should be passed:
+        1/ cards - array of cards
+        2/ section - a section
+        3/ file_id - the ID of the file that the card is currently in, or nil
+-->
+<h2><%= section.title %></h2>
+<%= section.notes %>
+<br/>
+<% for card in section.cards %>
+    <b><%= card.tag %></b>
+    <br/>
+    <small><%= card.cite %></small>
+    <br/>
+    <%= card.contents %>
+    <br/><br/>
+<% end %>

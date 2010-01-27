@@ -1,0 +1,33 @@
+<h1>Users Administration</h1>
+
+<h3>Actions</h3>
+<%= link_to("Add Student", :action => :add_debater_form) %>
+
+<h3>Users</h3>
+<table>
+    <tr>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Admin Status</th>
+    </tr>
+    <% @all_debaters.each do |debater| %>
+        <tr>
+            <td><%= debater.email %></td>
+            <td><%= debater.password %></td>
+            <td><%= debater.name %></td>
+            <td><%= link_to("Edit Student", :controller => :debater, :action => :edit_debater_form, :id => debater.id) %></td>
+            <td><%= link_to("Delete Student", :controller => :debater, :action => :delete_debater, :id => debater.id) %></td>
+            <td>
+                <% if debater.is_admin %>
+                    <%= link_to("Remove Admin", :action => :toggle_admin, :id => debater.id) %>
+                <% else %>
+                    <%= link_to("Make Admin", :action => :toggle_admin, :id => debater.id) %>
+                <% end %>
+            </td>
+        </tr>
+    <% end %>
+</table>
+

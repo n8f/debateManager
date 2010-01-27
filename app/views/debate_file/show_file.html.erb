@@ -1,0 +1,6 @@
+<h1><%= @debate_file.title %></h1>
+<%= @debate_file.notes %>
+<br/><br/>
+<% for section in @debate_file.sections %>
+    <%= render :partial => 'section/section_full', :locals => { :file_id => @debate_file.id, :section => section }  %>
+<% end %>

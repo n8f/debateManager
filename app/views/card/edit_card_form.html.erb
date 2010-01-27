@@ -1,0 +1,30 @@
+<% form_for :card, :url => { :action => :edit_card, :id => @card.id } do |form| %>
+    <center>
+        <table>
+            <tr>
+                <td colspan="2"><center><em>EDIT CARD</em></center></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><%= form.text_field(:tag) %></td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td><%= form.text_field(:cite) %></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Contents</td>
+                <td><%= form.text_area(:contents) %></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <%= form.submit("Edit Card") %>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+<% end %>

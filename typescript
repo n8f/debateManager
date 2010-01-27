@@ -1,0 +1,417 @@
+Script started on Wed 27 Jan 2010 10:46:13 AM CST
+nfulton@system47:~/dev/ruby/rails/debate$ exit/[K
+nfulton@system47:~/dev/ruby/rails/debate$ exitscript/server 
+=> Booting WEBrick...
+=> Rails 2.1.0 application started on http://127.0.0.1:3000
+=> Ctrl-C to shutdown server; call with --help for options
+[2010-01-27 10:46:17] INFO  WEBrick 1.3.1
+[2010-01-27 10:46:17] INFO  ruby 1.8.7 (2008-08-11) [i486-linux]
+[2010-01-27 10:46:17] INFO  WEBrick::HTTPServer#start: pid=5433 port=3000
+127.0.0.1 - - [27/Jan/2010:10:46:18 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+- -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:10:46:20 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+- -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:01:27 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+- -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:01:32 CST] "GET /section/show_section_summary HTTP/1.1" 500 14194
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:05:57 CST] "GET /section/show_section_summary HTTP/1.1" 500 8569
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:06:37 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:07:09 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+^C[2010-01-27 11:07:29] INFO  going to shutdown ...
+[2010-01-27 11:07:29] INFO  WEBrick::HTTPServer#start done.
+nfulton@system47:~/dev/ruby/rails/debate$ 
+nfulton@system47:~/dev/ruby/rails/debate$ script/server 
+=> Booting WEBrick...
+=> Rails 2.1.0 application started on http://127.0.0.1:3000
+=> Ctrl-C to shutdown server; call with --help for options
+[2010-01-27 11:07:31] INFO  WEBrick 1.3.1
+[2010-01-27 11:07:31] INFO  ruby 1.8.7 (2008-08-11) [i486-linux]
+[2010-01-27 11:07:31] INFO  WEBrick::HTTPServer#start: pid=5755 port=3000
+127.0.0.1 - - [27/Jan/2010:11:07:31 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:07:32 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:07:33 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:07:33 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:08:57 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:08:57 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:17 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:18 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:39 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:39 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:40 CST] "GET /section/show_section_summary HTTP/1.1" 500 9731
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:47 CST] "GET /section/show_section_summary HTTP/1.1" 404 9918
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary
+127.0.0.1 - - [27/Jan/2010:11:09:54 CST] "GET /section/display_all_sections HTTP/1.1" 200 1789
+- -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:09:57 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 9554
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:11:37 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14224
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:12:25 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:02 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:05 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:06 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:12 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:21 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:27 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:28 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:29 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:29 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:30 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:13:35 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14146
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:14:10 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14555
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:15:30 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14555
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:15:31 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14555
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:15:32 CST] "GET /section/show_section_summary/2 HTTP/1.1" 500 14555
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:17:41 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 2008
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:17:56 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:17:57 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:18:01 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1938
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:18:05 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 404 576
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:18:26 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 500 651
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:18:49 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:18:50 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:18:51 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:18:52 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 116
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:18:52 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:18:54 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:12 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:13 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:19:14 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:15 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:19:15 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:18 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:19:18 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:29 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:30 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 500 9634
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:19:36 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:19:36 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:19:37 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:19:37 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:22:46 CST] "GET /card/display_all_cards HTTP/1.1" 200 1643
+http://localhost:3000/section/show_section_summary/2 -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:22:50 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:22:52 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:23:07 CST] "GET /section/remove_card?card_id=2&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=2&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:23:07 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:23:17 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:23:20 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:23:25 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:23:33 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:23:33 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:24:34 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:24:37 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 500 9733
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:25:45 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 200 1714
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:25:48 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:25:48 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:26:01 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:26:03 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:26:03 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:26:09 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:26:11 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:26:11 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:26:23 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:26:25 CST] "GET /section/edit_section_form/2 HTTP/1.1" 200 2449
+http://localhost:3000/section/display_all_sections -> /section/edit_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:26:34 CST] "POST /section/edit_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/edit_section_form/2 -> /section/edit_section/2
+127.0.0.1 - - [27/Jan/2010:11:26:34 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/edit_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:26:37 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1953
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:27:14 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:27:15 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:27:20 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:27:40 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:28:41 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:28:43 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:28:43 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:29:35 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:29:35 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:32:16 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:34:39 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:34:39 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:34:43 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:34:43 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:35:44 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:35:48 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:35:48 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:38:00 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:38:01 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 500 13155
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:39:15 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:39:15 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:39:29 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:39:32 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:39:32 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:39:34 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:39:38 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:39:38 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:41:02 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1676
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:41:05 CST] "GET /section/show_section_summary/2 HTTP/1.1" 304 0
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:41:07 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:41:10 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:41:10 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:41:11 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1825
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:41:13 CST] "GET /section/remove_card?card_id=4&section_id=2 HTTP/1.1" 302 118
+http://localhost:3000/section/show_section_summary/2 -> /section/remove_card?card_id=4&section_id=2
+127.0.0.1 - - [27/Jan/2010:11:41:13 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1676
+http://localhost:3000/section/show_section_summary/2 -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:41:15 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:41:19 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:41:19 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:41:20 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1825
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:42:54 CST] "GET /section/show_section HTTP/1.1" 404 9894
+http://localhost:3000/section/display_all_sections -> /section/show_section
+127.0.0.1 - - [27/Jan/2010:11:43:12 CST] "GET /section/show_section HTTP/1.1" 404 9894
+http://localhost:3000/section/display_all_sections -> /section/show_section
+127.0.0.1 - - [27/Jan/2010:11:43:13 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:43:34 CST] "GET /section/display_all_sections HTTP/1.1" 200 1791
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:43:35 CST] "GET /section/show_section/2 HTTP/1.1" 500 14028
+http://localhost:3000/section/display_all_sections -> /section/show_section/2
+127.0.0.1 - - [27/Jan/2010:11:43:37 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:43:38 CST] "GET /section/show_section/2 HTTP/1.1" 500 14028
+http://localhost:3000/section/display_all_sections -> /section/show_section/2
+127.0.0.1 - - [27/Jan/2010:11:44:10 CST] "GET /section/show_section/2 HTTP/1.1" 200 1814
+http://localhost:3000/section/display_all_sections -> /section/show_section/2
+127.0.0.1 - - [27/Jan/2010:11:44:17 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/show_section/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:44:19 CST] "GET /section/add_card_to_section_form/2 HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /section/add_card_to_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:44:21 CST] "POST /section/add_card_to_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/add_card_to_section/2
+127.0.0.1 - - [27/Jan/2010:11:44:21 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/add_card_to_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:44:22 CST] "GET /section/show_section_summary/2 HTTP/1.1" 200 1953
+http://localhost:3000/section/display_all_sections -> /section/show_section_summary/2
+127.0.0.1 - - [27/Jan/2010:11:44:26 CST] "GET /section/show_section/2 HTTP/1.1" 200 1927
+http://localhost:3000/section/display_all_sections -> /section/show_section/2
+127.0.0.1 - - [27/Jan/2010:11:45:25 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:45:26 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:45:26 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:45:31 CST] "GET /section/edit_section_form/2 HTTP/1.1" 200 2482
+http://localhost:3000/section/display_all_sections -> /section/edit_section_form/2
+127.0.0.1 - - [27/Jan/2010:11:45:40 CST] "POST /section/edit_section/2 HTTP/1.1" 302 116
+http://localhost:3000/section/edit_section_form/2 -> /section/edit_section/2
+127.0.0.1 - - [27/Jan/2010:11:45:40 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/section/edit_section_form/2 -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:45:43 CST] "GET /section/show_section/2 HTTP/1.1" 200 1942
+http://localhost:3000/section/display_all_sections -> /section/show_section/2
+127.0.0.1 - - [27/Jan/2010:11:46:36 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:46:37 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:46:38 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:46:38 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:46:39 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:46:39 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:46:40 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:46:41 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:46:42 CST] "GET /debater/logout HTTP/1.1" 302 138
+http://localhost:3000/debater/home -> /debater/logout
+127.0.0.1 - - [27/Jan/2010:11:46:42 CST] "GET /debater/login_form?message=Logged+out+successfully HTTP/1.1" 200 1631
+http://localhost:3000/debater/home -> /debater/login_form?message=Logged+out+successfully
+127.0.0.1 - - [27/Jan/2010:11:46:50 CST] "POST /debater/do_login HTTP/1.1" 302 116
+http://localhost:3000/debater/login_form?message=Logged+out+successfully -> /debater/do_login
+127.0.0.1 - - [27/Jan/2010:11:46:50 CST] "GET /debater/display_all_debaters HTTP/1.1" 200 4383
+http://localhost:3000/debater/login_form?message=Logged+out+successfully -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:46:56 CST] "GET /debater/toggle_admin/6 HTTP/1.1" 302 116
+http://localhost:3000/debater/display_all_debaters -> /debater/toggle_admin/6
+127.0.0.1 - - [27/Jan/2010:11:46:56 CST] "GET /debater/display_all_debaters HTTP/1.1" 200 4385
+http://localhost:3000/debater/display_all_debaters -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:46:59 CST] "GET /debater/logout HTTP/1.1" 302 138
+http://localhost:3000/debater/display_all_debaters -> /debater/logout
+127.0.0.1 - - [27/Jan/2010:11:46:59 CST] "GET /debater/login_form?message=Logged+out+successfully HTTP/1.1" 200 1631
+http://localhost:3000/debater/display_all_debaters -> /debater/login_form?message=Logged+out+successfully
+127.0.0.1 - - [27/Jan/2010:11:47:01 CST] "POST /debater/do_login HTTP/1.1" 302 116
+http://localhost:3000/debater/login_form?message=Logged+out+successfully -> /debater/do_login
+127.0.0.1 - - [27/Jan/2010:11:47:01 CST] "GET /debater/display_all_debaters HTTP/1.1" 304 0
+http://localhost:3000/debater/login_form?message=Logged+out+successfully -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:47:03 CST] "GET /debater/home HTTP/1.1" 200 1363
+http://localhost:3000/debater/display_all_debaters -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:47:04 CST] "GET /debater/display_all_debaters HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:47:05 CST] "GET /debater/toggle_admin/6 HTTP/1.1" 302 116
+http://localhost:3000/debater/display_all_debaters -> /debater/toggle_admin/6
+127.0.0.1 - - [27/Jan/2010:11:47:05 CST] "GET /debater/display_all_debaters HTTP/1.1" 302 160
+http://localhost:3000/debater/display_all_debaters -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:47:05 CST] "GET /debater/login_form?message=must+login+as+admin+to+make+specified+request HTTP/1.1" 200 1957
+http://localhost:3000/debater/display_all_debaters -> /debater/login_form?message=must+login+as+admin+to+make+specified+request
+127.0.0.1 - - [27/Jan/2010:11:47:09 CST] "GET /debater/home HTTP/1.1" 200 1250
+http://localhost:3000/debater/login_form?message=must+login+as+admin+to+make+specified+request -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:47:10 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:47:11 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:47:12 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:47:12 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:47:13 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:47:14 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:47:14 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:47:15 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:47:16 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/section/display_all_sections -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:47:20 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:47:25 CST] "GET /section/display_all_sections HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:47:27 CST] "GET /debater/home HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:47:28 CST] "GET /card/display_all_cards HTTP/1.1" 304 0
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:47:29 CST] "GET /debater/logout HTTP/1.1" 302 138
+http://localhost:3000/card/display_all_cards -> /debater/logout
+127.0.0.1 - - [27/Jan/2010:11:47:29 CST] "GET /debater/login_form?message=Logged+out+successfully HTTP/1.1" 200 1631
+http://localhost:3000/card/display_all_cards -> /debater/login_form?message=Logged+out+successfully
+127.0.0.1 - - [27/Jan/2010:11:47:36 CST] "POST /debater/do_login HTTP/1.1" 302 116
+http://localhost:3000/debater/login_form?message=Logged+out+successfully -> /debater/do_login
+127.0.0.1 - - [27/Jan/2010:11:47:36 CST] "GET /debater/display_all_debaters HTTP/1.1" 200 4383
+http://localhost:3000/debater/login_form?message=Logged+out+successfully -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:48:06 CST] "GET /debater/add_debater_form HTTP/1.1" 200 2165
+http://localhost:3000/debater/display_all_debaters -> /debater/add_debater_form
+127.0.0.1 - - [27/Jan/2010:11:48:10 CST] "GET /debater/display_all_debaters HTTP/1.1" 304 0
+http://localhost:3000/debater/add_debater_form -> /debater/display_all_debaters
+127.0.0.1 - - [27/Jan/2010:11:48:11 CST] "GET /debater/home HTTP/1.1" 200 1363
+http://localhost:3000/debater/display_all_debaters -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:48:11 CST] "GET /card/display_all_cards HTTP/1.1" 200 1756
+http://localhost:3000/debater/home -> /card/display_all_cards
+127.0.0.1 - - [27/Jan/2010:11:48:12 CST] "GET /section/display_all_sections HTTP/1.1" 200 1904
+http://localhost:3000/card/display_all_cards -> /section/display_all_sections
+127.0.0.1 - - [27/Jan/2010:11:48:14 CST] "GET /debater/home HTTP/1.1" 200 1363
+http://localhost:3000/section/display_all_sections -> /debater/home
+127.0.0.1 - - [27/Jan/2010:11:48:21 CST] "GET /debater/edit_myself_form HTTP/1.1" 200 2009
+http://localhost:3000/debater/home -> /debater/edit_myself_form
+127.0.0.1 - - [27/Jan/2010:11:48:24 CST] "GET /debater/logout HTTP/1.1" 302 138
+http://localhost:3000/debater/edit_myself_form -> /debater/logout
+127.0.0.1 - - [27/Jan/2010:11:48:24 CST] "GET /debater/login_form?message=Logged+out+successfully HTTP/1.1" 200 1631
+http://localhost:3000/debater/edit_myself_form -> /debater/login_form?message=Log

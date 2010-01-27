@@ -1,0 +1,25 @@
+<% form_for :section, :url => { :action => :edit_section, :id => @section.id } do |form| %>
+    <center>
+        <table>
+            <tr>
+                <td colspan="2"><center><em>EDIT section</em></center></td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td><%= form.text_field(:title) %></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Notes</td>
+                <td><%= form.text_area(:notes) %></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <%= form.submit("Edit section") %>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+<% end %>

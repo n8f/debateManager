@@ -1,0 +1,19 @@
+<% form_tag(:action => :add_section_to_file, :id => @debate_file.id) do %>
+    <table>
+        <tr>
+            <td colspan=2><center>Add Section To File</center></td>
+        </tr>
+        <tr>
+            <td>Section</td>
+            <td><%= select_tag(:section_id, options_for_select(@section_select)) %></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <%= submit_tag("Add Section To " + @debate_file.title) %>
+                </center>
+            </td>
+        </tr>
+    </table>
+<% end %>
+

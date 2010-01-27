@@ -1,0 +1,20 @@
+<!-- partial should be passed:
+        1/ section - a section
+        2/ file_id - the ID of the file that the card is currently in, or nil
+-->
+<h2>
+    <%= section.title %>
+    <% if file_id != nil %>
+    <%= link_to("rm section", :controller => :debate_file, 
+                              :action => :remove_section_from_file, 
+                              :debate_file_id => file_id, 
+                              :section_id => section.id) %>
+    <% end %>
+</h2>
+<%= section.notes %>
+<ol>
+<% for card in section.cards %>
+    <li><b><%= card.tag %></b> - <small><%= card.cite %></small>
+    <%= link_to("rm", :controller => :section, :action => :remove_card, :card_id => card.id, :section_id => section.id) %></li>
+<% end %>
+</ol>

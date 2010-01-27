@@ -1,0 +1,4 @@
+<h1>File Summary</h1>
+<% for section in @debate_file.sections %>
+    <%= render :partial => 'section/section_summary', :locals => { :section => section, :file_id => @debate_file.id } %>
+<% end %>

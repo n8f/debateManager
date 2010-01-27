@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Carthage College Debate File Management System</title>
+    </head>
+    <body>
+        <table width="100%" height="80%">
+            <tr>
+                    <center>
+                        <font size=5>
+                            Carthage Debate File Management
+                        </font>                    
+                        <br>
+                        Hack Debate
+                    </center>
+                </td>
+            <tr>
+            <tr>
+                <td valign="top">
+                    <%= yield(:layout) %>
+                </td>
+            </tr>
+        </table>
+        <hr/>
+            <center>
+                <% if session[:debater] %>
+                    <!-- Admin Operations -->
+                    <% if session[:debater].is_admin %>
+                        <%= link_to("User Admin", :controller => :debater, :action => :display_all_debaters) %>
+                    <% end %>
+                    <!-- User Operations -->
+                    <%= link_to("User Home", :controller => :debater, :action => :home) %>
+                    <%= link_to("Card Manager", :controller => :card, :action => :display_all_cards) %>
+                    <%= link_to("Section Manager", :controller => :section, :action => :display_all_sections) %>
+                    <%= link_to("File Manager", :controller => :debate_file, :action => :display_all_files) %>
+                    <%= link_to("Log Out", :controller => :debater, :action => :logout) %>
+                <% else %>
+                    <!-- Non-User Operations -->
+                    <%= link_to("Log On", :controller => :debater, :action => :login_form) %>
+                <% end %>
+            </center>
+        </body>
+</html>
